@@ -46,6 +46,7 @@ const getSingleProduct = async(req,res,next) => {
 }
 
 //bu biraz skıntılı kısım
+//sorgu yapma örneği http://localhost:5000/getAllProduct?category=shoe&min=50&max=200&limit=10
 const getAllProduct = async(req,res,next) => { 
     const {min,max,...others} = req.query
     try {
